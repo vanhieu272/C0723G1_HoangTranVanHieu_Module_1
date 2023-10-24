@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            max-width: 100%;
+            margin-left: 0;
+            letter-spacing: .01em;
+            font-size: 90%;
+        }
+
+
+        header{
+            font-size: 160%;
+            padding-left: 16px;
+        }
+
+        .title{
+            padding-left: 16px;
+        }
+
+        .question{
+            font-weight: bold;
+        }
+
+        ul{
+            padding-left: 16px;
+            list-style-type: none ;
+        }
+
+        .gender-box{
+            margin-left: 22px
+        }
+
+        table {
+            table-layout: fixed;
+            border-collapse: collapse ;
+            width: 1000px;
+            height: 200px;
+        }
+
+        .table-title{
+            width: 150px;
+            font-weight: normal;
+        }
+
+        td, th{
+            height: 50px;
+            border: 1px solid gray;
+        }
+
+        tr:nth-child(odd){
+           background-color: #dddddd
+        }
+
+        .option-rate{
+            text-align: center;
+        }
+
+        .btn-submit{
+            background-color: white;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 600;
+            box-sizing: border-box;
+            border: 2px;
+            border-style: ridge;
+            border-radius: 8px;
+            
+        }
+
+        .select-box{
+            width: 700px;
+        }
+
+        .rich-text-box{
+            width: 1000px;
+            height: 200px;
+        }
+
+    </style>
+    <header>
+        Market Research Survey
+    </header>
+    <div class="title">Please take a few moments to complete this satisfaction survey.</div>
+    <hr>
+    <form action="#" method="post">
+    <ul>
+        <li class="question">What is your age range?</li>
+        <select class="select-box" name="age">
+            <option>18-24</option>
+            <option>25-34</option>
+            <option>35-50</option>
+            <option>50+</option>
+        </select>
+        <br>
+        <br>
+        <li class="question">What is your yearly income range?</li>
+        <select class="select-box" name="yearly">
+            <option>$0 - $25,000</option>
+            <option>$25,000 - $50,000</option>
+            <option>$50,000 - $100,000</option>
+            <option>$100,000+</option>
+        </select>
+        <br>
+        <br>
+        <li class="question">Gender Identity</li>
+        <input type="radio" name="gender"><label>Male</label><br/>
+        <input type="radio" name="gender"><label>Female</label><br/>
+        <input type="radio" name="gender"><label>Nonbinary</label><br/>
+        <input type="radio" name="gender"><label>Other</label><br/>
+        <input type="text" class="gender-box"> 
+<br>
+<br>
+        <li class="question">Which of the following products have tour purchase in the last 2 months. Please check all that apply</li>
+        <input type="checkbox">Product 1</label> <br>
+        <input type="checkbox">Product 2</label> <br>
+        <input type="checkbox">Product 3</label> <br>
+<br>
+        <li class="question">How often would you use our new product?</li>
+        <input type="radio" name="often">Daily</label> <br>
+        <input type="radio" name="often">Weekly</label> <br>
+        <input type="radio" name="often">Monthly</label> <br>
+<br>
+        <li class="question">What would you pay for the new product?</li>
+        <label>$ <input type="number" step="1" style="width: 75px;"> . <input type="number" step="1" style="width: 25px;"></label>
+        <pre>  Dollars        Cents</pre>
+<br>
+        <li class="question">What features would you like to see in the new product.</li>
+        <input type="text" class="rich-text-box">
+<br>
+<br>
+<br>
+        <li> Please rate your level of agreement with the following statements.</li> <br>
+        <table>
+            <tr>
+                <th></th>
+                <th class="table-title">Strongly Disagree</th>
+                <th class="table-title">Disagree</th>
+                <th class="table-title">Agree</th>
+                <th class="table-title">Strongly Agree</th>
+            </tr>
+
+            <tr>
+                <td><b>Our products are priced fairly</b></td>
+                <td class="option-rate"><input type="radio" name="option1" value="Option 1"> <br>1</td> 
+                <td class="option-rate"><input type="radio" name="option1" value="Option 2"> <br>2</td> 
+                <td class="option-rate"><input type="radio" name="option1" value="Option 3"> <br>3</td> 
+                <td class="option-rate"><input type="radio" name="option1" value="Option 4"> <br>4</td> 
+            </tr>
+
+            <tr>
+                <td><b>Our products are high quality</b></td>
+                <td class="option-rate"><input type="radio" name="option2" value="Option 1"> <br>1</td> 
+                <td class="option-rate"><input type="radio" name="option2" value="Option 2"> <br>2</td> 
+                <td class="option-rate"><input type="radio" name="option2" value="Option 3"> <br>3</td> 
+                <td class="option-rate"><input type="radio" name="option2" value="Option 4"> <br>4</td> 
+            </tr>
+
+            <tr>
+                <td><b>You would recommend our products to a friend or coworker</b></td>
+                <td class="option-rate"><input type="radio" name="option3" value="Option 1"> <br>1</td> 
+                <td class="option-rate"><input type="radio" name="option3" value="Option 2"> <br>2</td> 
+                <td class="option-rate"><input type="radio" name="option3" value="Option 3"> <br>3</td> 
+                <td class="option-rate"><input type="radio" name="option3" value="Option 4"> <br>4</td> 
+            </tr>
+        </table>
+        <br>
+        <input class="btn-submit" type="submit" value="Submit">
+    </ul>
+</form>
+</body>
+</html>

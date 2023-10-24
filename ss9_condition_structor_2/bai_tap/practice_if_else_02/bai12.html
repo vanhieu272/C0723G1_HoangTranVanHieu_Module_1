@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let tienGuiVao = +prompt("Nhap so tien gui vao: ");
+      let laiSuatNam = +prompt("Nhap lai suat 1 nam (%): ");
+      let soNam = +prompt("Nhap so nam gui tien: ");
+      let tienRutRa;
+
+      if (tienGuiVao < 1 || laiSuatNam < 0 || laiSuatNam > 100 || soNam < 1) {
+        alert(
+          "Thong tin ban nhap khong hop le (tien gui vao va so nam gui khong duoc < 1, lai suat khong the < 0 hoac lon hon 100%)"
+        );
+      } else {
+        tienRutRa =
+          tienGuiVao * Math.pow(1 + laiSuatNam / 100 / 12, soNam * 12);
+        alert(
+          "So tien nhan duoc sau " + soNam + " nam " + " la: " + tienRutRa + "VND");
+      }
+    </script>
+  </body>
+</html>

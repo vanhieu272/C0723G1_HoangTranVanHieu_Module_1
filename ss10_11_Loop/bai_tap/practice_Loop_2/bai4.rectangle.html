@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+  
+      do{
+        r = +prompt("Nhap chieu rong HCN: ");
+        d = +prompt("Nhap chieu dai HCN: ");
+        if (r > d) {
+          alert("Chieu rong khong the nho hon chieu dai!!");
+        }
+      }while (r > d);
+      drawRectangle(d, r);
+
+      function drawRectangle(d, r) {
+        for (let i = 1; i <= r; i++) {
+          var row = "" + "<br/>";
+          for (let j = 1; j <= d; j++) {
+            //khi gặp dòng đầu tiên hay dòng cuối cùng (i), hoặc cột đầu tiên hay cột cuối cùng (j) thì in ra
+            if (i === 1 || i === r || j === 1 || j === d) {
+              row += "*" + "&nbsp" + "&nbsp";
+            } else {
+              // ngược lại, nếu gặp các dòng, cột bên trong thì in ra các kí tự trắng &nbsp
+              row += "&nbsp;&nbsp;&nbsp;&nbsp;";
+            }
+          }
+          document.write(row);
+        }
+      }
+    </script>
+  </body>
+</html>

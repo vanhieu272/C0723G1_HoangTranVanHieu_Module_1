@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành JS</title>
+</head>
+<body>
+    <script>
+        function showMessage(){
+            alert("Xin chào!!");
+        }
+
+        function showMessage1(){
+            document.getElementById('messageDiv').innerHTML='Xin Chào!!';
+        }
+
+        function showMessage2(){
+            document.write('Xin Chào!!')
+        }
+
+        function showMessage3(){
+            console.log('Xin Chào!!');
+        }
+    </script>
+    <button type="button" onclick="showMessage();">Click vào đây</button> <br><br><br><br><br>
+
+    <div id="messageDiv"></div>
+    <button type="button" onclick="showMessage1();">Click Here</button> <br><br><br><br><br>
+
+    <button type="button" onclick="showMessage2();">Click vào đây</button> <br><br><br><br><br>
+
+    <button type="button" onclick="showMessage3();">Click vào đây</button>
+</body>
+</html>

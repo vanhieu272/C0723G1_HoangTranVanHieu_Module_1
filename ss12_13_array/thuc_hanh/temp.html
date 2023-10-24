@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = +prompt("Nhập số snto muốn in ra : ");
+      let number;
+      for (number = 2; count1 <= n; number++) {
+        let count1 = 0;
+        for (i = 1; i <= number; i++) {
+          let count = 0;
+          if (number % i == 0) {
+            count = count + 1;
+          }
+
+          if (count == 2) {
+            document.write(number);
+            count1 = count1 + 1;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //main
+      let numRows = +prompt("Nhap vao chieu cao tam giac: ");
+      drawTriangle1(numRows);
+      document.write("<br/> <br/>");
+      drawTriangle2(numRows);
+      document.write("<br/> <br/>");
+      drawTriangle3(numRows);
+      document.write("<br/> <br/>");
+      drawTriangle4(numRows);
+
+      //function
+      function drawTriangle1(n) {
+        for (let i = 1; i <= n; i++) {
+          let row = "" + "<br/>";
+          for (let j = 1; j <= i; j++) {
+            row += "*";
+          }
+          document.write(row);
+        }
+      }
+
+      function drawTriangle2(n) {
+        for (let i = 1; i <= n; i++) {
+          let row = "" + "<br/>";
+          for (let j = n; j >= i; j--) {
+            row += "*";
+          }
+          document.write(row);
+        }
+      }
+
+      function drawTriangle3(n) {
+        for (let i = 1; i <= n; i++) {
+          var row = "";
+          for (let j = n - 1; j >= i; j--) {
+            row += "&nbsp;&nbsp;";
+          }
+          for (let k = 1; k <= i; k++) {
+            row += "*";
+          }
+          document.write(row + "<br/>");
+        }
+      }
+
+      function drawTriangle4(n) {
+        for (let i = 1; i <= n; i++) {
+            var row = "";
+            for (let j = 1; j < i; j++) {
+                row += "&nbsp;&nbsp;";
+            }
+            for (let k = i; k <= n; k++) {
+                row += "*";
+            }
+            document.write(row + "<br/>");
+        }
+    }
+    </script>
+  </body>
+</html>

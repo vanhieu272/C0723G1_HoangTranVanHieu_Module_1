@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Convert Feet - Meter</h2>
+    <input type="number" id="inputValue" />
+    <select id="userSelect">
+      <option value="Meter">Meter to Feet</option>
+      <option value="Feet">Feet to Meter</option>
+    </select>
+    <button onclick="convert()">Convert</button>
+    <p id="result">Result:</p>
+    <script>
+      function convert() {
+        let inputValue = document.getElementById("inputValue").value;
+        let userSelect = document.getElementById("userSelect").value;
+        let result;
+        if (userSelect === "Meter") {
+          result = inputValue * 3.279;
+        } else if (userSelect === "Feet") {
+          result = inputValue * 0.305;
+        }
+        document.getElementById("result").innerHTML = "Result: " + result;
+      }
+    </script>
+  </body>
+</html>

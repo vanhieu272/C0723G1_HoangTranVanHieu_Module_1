@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+</head>
+<body>
+    <p id="demo"> Click me</p>
+    <script>
+        function onClick(){
+            var demo =  document.getElementById("demo");
+            demo.addEventListener("click", clickFunction);
+        }
+
+        function clickFunction(){
+            alert("You clicked the button");
+        }
+
+        window.onload = onClick;
+    </script>
+</body>
+    <!-- Mã Js sẽ thực thi ngay khi trình duyệt load đến nên hãy để nó ở cuối body hoặc cách an toàn 100% là sử dụng câu lệnh window-->
+</html>

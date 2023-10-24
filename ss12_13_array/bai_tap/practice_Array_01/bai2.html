@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Nhập mảng
+      let arr = new Array(10);
+      for (let i = 0; i < arr.length; i++) {
+        arr[i] = +prompt("Nhap phan tu thu " + i);
+      }
+      document.write("Mang cua ban la: " + arr + "<br/>");
+      //Tim phan tu lon nhat va danh dau vi tri
+      let max = arr[0];
+      let index;
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= max) {
+          max = arr[i];
+          index = i;
+        }
+      }
+      document.write(
+        "Phan tu lon nhat trong mang cua ban la: " +
+          max +
+          " tai vi tri thu " +
+          index
+      );
+    </script>
+  </body>
+</html>

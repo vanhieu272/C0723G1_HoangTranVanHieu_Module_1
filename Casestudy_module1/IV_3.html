@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str1 = ("aabbc");
+        let str2 = ("abaeda");
+        countCommonChar(str1,str2);
+        
+function countCommonChar(str1,str2){
+        str1 = str1.split("");
+        str2 = str2.split("");
+        let count = 0;
+        for(let i = 0; i <str1.length; i++){
+            for(let j = 0; j < str2.length; j++){
+                if(str1[i] === str2[j]){
+                    str2.splice(j,1);
+                    count++
+                    break;
+                }
+            }
+        }
+        console.log("Hai xâu có "+count +" kí tự chung");
+    }
+
+    </script>
+</body>
+</html>

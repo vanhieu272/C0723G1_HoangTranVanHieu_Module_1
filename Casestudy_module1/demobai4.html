@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+              let str = "HHH NNN nnn hhh";
+              checkStr(str);
+
+              function checkStr(str){
+                  let arr = [];
+                  let arrNew = [];
+                  let countUp = 0;
+                  let countLow = 0;
+                  arr = str.split("");
+                  console.log(arr);
+                  for(let i = 0; i < arr.length; i++){
+                      if (arr[i] != "" && arr[i] != " ") {
+                        arrNew.push(arr[i]);
+                     }
+                    }
+                  console.log(arrNew);
+                  for(let i = 0; i < arrNew.length; i++){
+                      if(arrNew[i] === arrNew[i].toUpperCase()){
+                          countUp++;
+                      }else if(arrNew[i] === arrNew[i].toLowerCase()){
+                          countLow++;
+                      }
+                  }
+                  console.log(countUp);
+                  console.log(countLow);
+                  if(countLow == countUp){
+                      console.log("true");
+                  }else{
+                      console.log("false");
+                  }
+              }
+
+    </script>
+  </body>
+</html>

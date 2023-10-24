@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let count = 0;
+      tong = 0;
+      /* co mot bien i chay tu 0 -> n nao do, moi lan i % 7 == 0 thi in i ra va count tang 1 don vi(count = 30 thi dung`),
+        /* sau do gan tong = tong + i*/
+      document.write("Day 30 so tu nhien dau tien chia het cho 7 la: ");
+      for (let i = 0; count < 30; i++) {
+        if (i % 7 == 0) {
+          document.write(+i + " ");
+          count++;
+          tong += i;
+        }
+      }
+      document.write("<br/>");
+      document.write(
+        "Tong cua 30 so tu nhien dau tien chia het cho 7 la: " + tong
+      );
+    </script>
+  </body>
+</html>

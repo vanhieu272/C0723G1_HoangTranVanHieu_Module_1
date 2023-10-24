@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button{
+        width: 200px;
+      }
+
+        ul>li{
+            font-size: large;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Tính điểm tổng 3 môn và điểm trung bình cộng: <br>
+        <div>
+          <input type="number" id="Ly" placeholder="Nhap diem Ly" />
+          <input type="number" id="Hoa" placeholder="Nhap diem Hoa" />
+          <input type="number" id="Sinh" placeholder="Nhap diem Sinh" />
+          <button id="tong">Tính tổng</button>
+          <button id="avg">Tính điểm trung bình</button>
+        </div>
+      </li>
+
+      <li>Chuyển đổi độ Celcius sang độ Fahrenheit: 
+        <div>
+            <input type="number" id="celcius" placeholder="Nhập độ C">
+            <button id="C-to-F">Chuyển đổi</button>
+            <p id="Result">Result:</p>
+        </div>
+      </li>
+
+      <li>Tính chu vi và diện tích hình tròn:
+        <div>
+            <input type="number" id="bankinh" placeholder="Nhập bán kính hình tròn">
+            <button id="dientich"> Tính diện tích</button>
+            <button id="chuvi">Tính chu vi</button>
+        </div>
+      </li>
+    </ul>
+    <script src="index.js"></script>
+  </body>
+</html>

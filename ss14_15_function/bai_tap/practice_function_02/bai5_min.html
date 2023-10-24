@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt(prompt("Nhap so nguyen thu 1: "));
+        let num2 = parseInt(prompt("Nhap so nguyen thu 2: "));
+        let num3 = parseInt(prompt("Nhap so nguyen thu 3: "));
+        document.write(searchMin(num1,num2,num3));
+
+        function searchMin(a,b,c){
+            if ( a <= b && a<= c) {
+                return "So nho nhat la "+ a;
+        }else if(b<=a && b<= c){
+            return "So nho nhat la "+ b
+        }else{
+            return "So nho nhat la"+ c
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h2{
+        margin-left: 80px;
+        color: rgb(206, 0, 21);
+    }
+    ol>li{
+        color: rgb(158, 0, 0);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+    }
+    button{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: rgb(0, 255, 0);
+        margin-top: 20px;
+        margin-left: 18px;
+        height: 48px;
+        border-radius: 16px;
+        font-weight: 600;
+    }
+  </style>
+  <body>
+    <h2>Menu đồ uống</h2>
+    <ol id="choose">
+      <li>Cafe........................15.000đ</li>
+      <li>Cam vắt...................20.000đ</li>
+      <li>Nước ép cà rốt........20.000đ</li>
+      <li>Nước ép cà chua.....15.000đ</li>
+      <li>Nước lọc.................5000đ</li>
+      <li>Nước dừa...............18.000đ</li>
+      <li>Xác nhận</li>
+      <button id="btn-oder" onclick="oderDrinks()">
+        Nhấn vào đây để ORDER
+      </button>
+    </ol>
+    <script>
+      let price = [0, 15000, 20000, 20000, 15000, 5000, 18000, 0];
+      let total = 0;
+      let chooseDrink;
+      function oderDrinks() {
+        do {
+          chooseDrink = +prompt("Nhập loại nước bạn muốn order (1 - 7): ");
+          if(chooseDrink == 7){
+            break;
+          }
+          if(!(Number.isInteger(chooseDrink)) ||
+          (chooseDrink < 1 || chooseDrink > 7)){
+            alert("Khong hop le!! Vui long oder lai!!");
+            return;
+          }
+          let quantity = +prompt("Nhập số lượng: ");
+          total += price[chooseDrink] * quantity;
+        } while (true);
+        alert("Tong tien ban can phai thanh toan la: " + total + "đ");
+        total = 0;
+      }
+    </script>
+  </body>
+</html>

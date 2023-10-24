@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let thuNhap = +prompt("Nhap tien luong hang thang: ");
+      if (thuNhap <= 6000000) {
+        thuNhap -= thuNhap * 0.05;
+      } else if (thuNhap <= 15000000) {
+        thuNhap -= thuNhap * 0.07;
+      } else {
+        thuNhap -= thuNhap * 0.1;
+      }
+      alert("Thu nhap cua ban sau thue la: " + thuNhap);
+    </script>
+  </body>
+</html>

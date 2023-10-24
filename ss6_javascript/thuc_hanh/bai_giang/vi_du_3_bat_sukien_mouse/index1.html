@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam eligendi sint, maxime numquam praesentium dicta magnam, repellat soluta iste quae, possimus laborum accusamus? Eius magni voluptatum, repudiandae mollitia quo error?</p>
+
+</body>
+    <script>
+            var demo = document.getElementById("demo");
+            demo.addEventListener("mouseover", mouseover);
+            demo.addEventListener("mouseout", mouseout);
+
+        function mouseover(){
+            document.getElementById("demo").style.color="red";
+        }
+
+        function mouseout(){
+            document.getElementById("demo").style.color="black";
+        }
+    </script>
+</html>

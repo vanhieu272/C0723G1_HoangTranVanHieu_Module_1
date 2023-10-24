@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Nhap mang
+      let n = +prompt("Nhap so phan tu cua mang: ");
+      let arr = new Array(n);
+      for (let i = 0; i < arr.length; i++) {
+        arr[i] = +prompt("Nhap phan tu thu " + i);
+      }
+      document.write("Mang cua ban la: " + arr + "<br>");
+      //Tim phan tu lon nhat va tinh trung binh cong
+      let max = arr[0];
+      let tong = 0;
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= max) {
+          max = arr[i];
+        }
+        tong += arr[i];
+      }
+      document.write("Phan tu lon nhat trong mang cua ban la: " + max + "<br>");
+      document.write(
+        "Trung binh cong cac phan tu trong mang la: " + tong / arr.length
+      );
+    </script>
+  </body>
+</html>

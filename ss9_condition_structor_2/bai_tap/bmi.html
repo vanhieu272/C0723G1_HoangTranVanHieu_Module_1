@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI</title>
+  </head>
+  <body>
+    <script>
+/*
+vì 2 biến height và weight là biến var, dùng trước khai báo sau - theo kiểu hoisting của Js
+nên trong lần kiểm tra đầu tiên nó có giá trị undefined 
+=> điều kiện trả về true (not a number) => thực hiện khối lệnh bên trong vòng lặp   
+*/
+        while (isNaN(height) || isNaN(weight)) {
+          var height = parseFloat(prompt("Nhập chiều cao (m): "));
+          var weight = parseFloat(prompt("Nhập cân nặng (kg): "));
+        }
+
+        let bmi = weight / Math.pow(height, 2);
+
+        if (bmi < 18) {
+          document.write("Underweight");
+        } else if (bmi < 25.0) {
+          document.write("Normal");
+        } else if (bmi < 30.0) {
+          document.write("Overweight");
+        } else {
+          document.write("Obese");
+        }
+/*
+còn khi dùng do - while như dưới đây thì khối lệnh do{} sẽ thực hiện 1 lần trước cho phép bạn nhập 2 biến
+sau đó kiểm tra điều kiện, nếu đúng (là ko phải kiểu number) => thực hiện cho nhập lại, nếu sai => thoát 
+và thực hiện các câu lệnh bên dưới 
+Vậy mặc dù 2 biến var ngầm định có giá trị undefined nhưng khối lệnh do-while này không xét điều kiện
+với giá trị undefined 1 lần nào cả
+*/
+    //   do {
+    //     var height = parseFloat(prompt("Nhập chiều cao (m): "));
+    //     var weight = parseFloat(prompt("Nhập cân nặng (kg): "));
+    //   } while (isNaN(height) || isNaN(weight));
+
+    //   let bmi = weight / Math.pow(height, 2);
+
+    //   if (bmi < 18) {
+    //     document.write("Underweight");
+    //   } else if (bmi < 25.0) {
+    //     document.write("Normal");
+    //   } else if (bmi < 30.0) {
+    //     document.write("Overweight");
+    //   } else {
+    //     document.write("Obese");
+    //   }
+    </script>
+  </body>
+</html>

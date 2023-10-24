@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js1</title>
+  </head>
+  <body>
+    <script>
+      let num = parseInt(prompt("Nhập số lượng nhân viên: "));
+      let realSalary = 0;
+      if (num < 1 || !Number.isInteger(num)) {
+        alert(
+          "Thông tin bạn nhập không hợp lệ!! \n(Gợi ý: Số lượng nhân viên phải là số nguyên và lớn hơn 0.)"
+        );
+      }
+      for (let i = 0; i < num; i++) {
+        let salary = parseFloat(
+          prompt("Nhập lương của người thứ " + (i + 1) + ":")
+        );
+        if (salary < 0 || isNaN(salary)) {
+          alert(
+            "Thông tin bạn nhập không hợp lệ!! \n(Gợi ý: Lương phải là số và lớn hơn 0)"
+          );
+          break;
+        }
+        if (salary > 15000000) {
+          realSalary = salary - (salary * 20) / 100;
+        } else if (7000000 <= salary) {
+          realSalary = salary - (salary * 10) / 100;
+        } else {
+          realSalary = salary - (salary * 5) / 100;
+        }
+        document.write(
+          "Lương ròng của người thứ  " + (i + 1) + " là: " + realSalary + "<br>"
+        );
+      }
+    </script>
+  </body>
+</html>

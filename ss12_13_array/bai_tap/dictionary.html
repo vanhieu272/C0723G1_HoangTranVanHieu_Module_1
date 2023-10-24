@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Tìm kiếm từ điển:</h2>
+    <input type="text" id="input" />
+    <button id="btn-search" onclick="trans()">Translate</button>
+    <div id="result"></div>
+    <script>
+      let arrEng = ["craft", "aircraft", "scissors", "mumps", "calf"];
+      let arrVie = ["con tàu", "máy bay", "cái kéo", "bệnh quai bị", "con bê"];
+      let index = -1;
+      let i;
+      function trans() {
+        let verb = document.getElementById("input").value.toLowerCase();
+        for (i = 0; i < arrEng.length; i++) {
+          if (verb == arrEng[i]) {
+            index = i;
+          }
+        }
+        if (index > -1) {
+          document.getElementById("result").innerHTML = arrVie[index];
+        } else {
+          document.getElementById("result").innerText = "Khong tim thay";
+        }
+        return (index = -1);
+      }
+    </script>
+  </body>
+</html>

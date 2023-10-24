@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Tạo 3 mảng a,b,c
+      let a = new Array(10);
+      let b = new Array(10);
+      let c = [];
+      //Nhập phần tử cho a và b
+      for (let i = 0; i < a.length; i++) {
+        a[i] = +prompt("Mang thu 1 - Nhap phan tu thu " + i);
+      }
+      for (let i = 0; i < b.length; i++) {
+        b[i] = +prompt("Mang thu 2 - Nhap phan tu thu " + i);
+      }
+      document.write("Mang ban dau cua ban la a = " + a + " va b = " + b +"<br>");
+      // truyền phần tử của b và a cho c
+      for (let i = 0; i < 10; i++) {
+        c[i] = b[i];
+        c[i + 10] = a[i];
+      }
+      document.write("Mang sau khi noi c = " +c);
+    </script>
+  </body>
+</html>

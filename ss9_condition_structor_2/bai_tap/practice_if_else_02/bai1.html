@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #result-box {
+        margin-top: 24px;
+      }
+
+      .wrapper {
+        margin-left: 10px;
+        width: 200px;
+        display: inline-block;
+      }
+    </style>
+    <div>
+      <div class="wrapper">
+        <label for="degree">degree</label> <br />
+        <input type="number" id="degree" />
+      </div>
+
+      <div class="wrapper">
+        <label>From:</label> <br />
+        <select id="From">
+          <option value="C">C</option>
+          <option value="F">F</option>
+        </select>
+      </div>
+
+      <div class="wrapper">
+        <label>To</label> <br />
+        <select id="To">
+          <option value="C">C</option>
+          <option value="F">F</option>
+        </select>
+      </div>
+
+      <div class="wrapper">
+        <button id="Convert" onclick="transferDegree()">CONVERT</button>
+      </div>
+    </div>
+    <div>
+      <p id="result"></p>
+    </div>
+
+    <script>
+      function transferDegree() {
+        let degree = document.getElementById("degree").value;
+        let from = document.getElementById("From").value;
+        let to = document.getElementById("To").value;
+        let result;
+        if (from == "C" && to == "F") {
+          result = (degree * 9) / 5 + 32 + "F";
+        } else if (from == "F" && to == "C") {
+          result = (degree * 5) / 9 - 32 + "C";
+        } else if (from == "C" && to == "C") {
+          result = degree + "C";
+        } else {
+          result = degree + "F";
+        }
+        document.getElementById("result").innerHTML = "result: " + result;
+      }
+    </script>
+  </body>
+</html>

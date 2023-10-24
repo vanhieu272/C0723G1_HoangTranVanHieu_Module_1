@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = +prompt("Nhap so phan tu cua mang: ");
+      let arr = new Array(num);
+      for (let i = 0; i < arr.length; i++) {
+        arr[i] = prompt("Nhap ki tu thu " + i);
+      }
+      let charSearch = prompt("Nhap ki tu can tim: ");
+      document.write(searchInArray(arr, charSearch));
+
+      function searchInArray(arr, c) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === c) {
+            count++;
+          }
+        }
+        if (count > 0) {
+          return "Ki tu " + "'" + c + "'" + " xuat hien " + count + " lan";
+        } else {
+          return -1;
+        }
+      }
+    </script>
+  </body>
+</html>

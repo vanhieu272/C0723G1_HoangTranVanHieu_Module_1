@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Nhập chuỗi
+      let str = prompt("Nhap chuoi: "); 
+      document.write("Chuoi cua ban la: " + str + "<br>");
+      
+      //Đếm số từ trong chuỗi tại vị trí thứ 0 và sau các khoảng trắng
+      let count = 0;
+      for(let i = 0; i < str.length; i++){
+        if((str[i] !== " " && i == 0) || (str[i] !== " " && str[i-1] === " ")){
+          count++;
+        }
+      }
+      document.write("So tu trong chuoi tren la: " + count);
+    </script>
+  </body>
+</html>

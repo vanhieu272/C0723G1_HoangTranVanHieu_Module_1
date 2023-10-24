@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style></style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="input-year" placeholder="Nhập năm cần kiểm tra" />
+    <button id="btn-check">Kiểm tra</button>
+    <script>
+        document.getElementById("btn-check").addEventListener("click", checkLeapYear);
+        function checkLeapYear() {
+        let year = document.getElementById("input-year").value;
+        if (isNaN(year) || year === "") {
+          alert("Please Enter a valid number!!");
+        } else if (year % 4 === 0 && year % 100 !== 0) {
+          alert("This is a leap year");
+        } else if (year % 400 === 0 && year % 100 === 0) {
+          alert("This is a leap year");
+        } else {
+          alert("this isn't a leap year");
+        }
+      }
+    </script>
+  </body>
+</html>

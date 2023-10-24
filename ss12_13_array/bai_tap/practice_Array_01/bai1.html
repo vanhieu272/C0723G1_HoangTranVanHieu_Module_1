@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Nhập và in ra mảng
+      let arr = new Array(10);
+      for (let i = 0; i < arr.length; i++) {
+        arr[i] = +prompt("Nhap phan tu thu " + i);
+      }
+      document.write("Mang cua ban la: " + arr + "<br/>");
+      //So sánh từng phần tử với 10, lớn hơn hoạc bằng 10 thì in ra
+      document.write("Cac phan tu lon hon hoac bang 10: " + "<br/>");
+      let count = 0;
+      for (i = 0; i < arr.length; i++) {
+        if (arr[i] >= 10) {
+          document.write(arr[i] + "<br/>");
+          count++;
+        }
+      }
+      document.write(
+        "=> Co " + count + " phan tu lon hon hoac bang 10 trong mang da cho"
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [1, 5, -10, 7, 9, 3, 2, 1];
+      let min = minOfArray(arr);
+      alert(min);
+
+      function minOfArray(arr) {
+        let min = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] <= min) {
+            min = arr[i];
+          }
+        }
+        return min;
+      }
+    </script>
+  </body>
+</html>

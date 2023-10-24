@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = prompt("Nhập vào chuỗi cần kiểm tra: ");
+      console.log("Chuỗi ban đầu: " + str);
+      nomalizeString(str);
+      
+
+      function nomalizeString(str) {
+        let arr = [];
+        let arrNew = [];
+        let arrNew2 = [];
+        arr = str.split(" ");
+        let longestWord = "";
+        // console.log(arr);
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] !== "") {
+            arrNew.push(arr[i]);
+          }
+        }
+        
+        for (let i = 0; i < arrNew.length; i++) {
+          let maxLength = arrNew[0].length;
+          if(maxLength < arrNew[i].length){
+            longestWord = arrNew[i];
+            maxLength = arrNew[i].length;
+          }
+          for (let j = 0; j < arrNew[i].length; j++) {
+            if (j == 0) {
+              arrNew2 += arrNew[i][j].toUpperCase();
+            } else {
+              arrNew2 += arrNew[i][j].toLowerCase();
+            }
+          }
+          arrNew2 += " ";
+        }
+        console.log("Sau khi chuẩn hoá: " + arrNew2 + "\n" +"Từ dài nhất là: " + longestWord);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #btn-play {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 100px;
+        border-radius: 25px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn-play" onclick="start()">START</button>
+    <script>
+      function start() {
+        let min = parseInt(prompt("Nhập số đầu tiên trong khoảng muốn đoán: "));
+        let max = parseInt(prompt("Nhập số cuối cùng trong khoảng muốn đoán: "));
+        if (min <= max) {
+          let luckyNumber = randomNumber(min, max);
+          for (let i = 0; i < 3; i++) {
+            let guessNumber = +prompt("Nhập con số dự đoán của bạn: ");
+            if (guessNumber === luckyNumber) {
+              alert("Chúc mừng bạn đã đoán đúng ^^ !!");
+              return; //đoán đúng thì kết thúc hàm start
+            } else if (guessNumber < luckyNumber) {
+              alert("Số bạn chọn nhỏ hơn con số may mắn của chúng tôi");
+            } else {
+              alert("Số bạn chọn lớn hơn con số may mắn của chúng tôi");
+            }
+          }
+          alert("Bạn đã hết lượt chơi rùi :'( ");
+        } else {
+          alert("Khoảng số bạn nhập vào không hợp lệ!!");
+        }
+      }
+
+      function randomNumber(min, max){
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    </script>
+  </body>
+</html>

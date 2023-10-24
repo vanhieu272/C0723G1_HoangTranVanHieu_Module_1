@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let temperature;
+      do {
+        let temperature = +prompt("Nhap nhiet do hien tai: ");
+        if (temperature < 20) {
+          alert("Hay tang nhiet do");
+        } else if (temperature > 100) {
+          alert("Hay giam nhiet do");
+        } else {
+          alert("Nhiet do binh thuong!!");
+          break;
+        }
+      } while (true);
+    </script>
+  </body>
+</html>

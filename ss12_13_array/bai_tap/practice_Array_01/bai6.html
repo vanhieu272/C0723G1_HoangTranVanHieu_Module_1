@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Nhập mảng
+      let n = +prompt("Nhap so phan tu cua mang: ");
+      let arr = new Array(n);
+      for (let i = 0; i < arr.length; i++) {
+        arr[i] = +prompt("Nhap phan tu thu " + i);
+      }
+      document.write("Mang ban dau cua ban la: " + arr + "<br>");
+      //Nhập số cần tìm rồi duyệt mảng, nếu có thì thay đổi giá trị result là có, không thì mặc định là không.
+      let V = +prompt("Nhap so can tim: ");
+      let result = V + "is not in array";
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === V) {
+          result = V + " is in the array";
+          break;
+        }
+      }
+      document.write(result);
+    </script>
+  </body>
+</html>

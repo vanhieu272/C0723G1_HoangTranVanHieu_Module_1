@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+  }
+  
+  h2 {
+    font-size: 32px;
+    color: #000000;
+  }
+  
+  .btn {
+    border-radius: 8px;
+    height: 32px;
+    width: 200px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  table {
+    margin-top: 16px;
+    width: 100%;
+  }
+  
+  table tr th,
+  table tr td {
+    border: 1px solid #000000;
+    padding: 10px;
+  }
+  
+  table tr th {
+    background-color: #eeeeee;
+  }

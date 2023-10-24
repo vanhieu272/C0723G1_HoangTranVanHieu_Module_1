@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #result-box {
+        margin-top: 24px;
+      }
+
+      .wrapper {
+        margin-left: 10px;
+        width: 200px;
+        display: inline-block;
+      }
+    </style>
+    <div>
+      <div class="wrapper">
+        <label for="meterToFeet">Transfer distance:</label> <br />
+        <input type="number" id="meterToFeet" />
+      </div>
+
+      <div class="wrapper">
+        <label>From:</label> <br />
+        <select id="From">
+          <option value="meter">meter</option>
+          <option value="feet">feet</option>
+        </select>
+      </div>
+
+      <div class="wrapper">
+        <label>To</label> <br />
+        <select id="To">
+          <option value="meter">meter</option>
+          <option value="feet">feet</option>
+        </select>
+      </div>
+
+      <div class="wrapper">
+        <button id="Convert" onclick="transfermeterToFeet()">CONVERT</button>
+      </div>
+    </div>
+    <div>
+      <p id="result"></p>
+    </div>
+
+    <script>
+      function transfermeterToFeet() {
+        let meterToFeet = document.getElementById("meterToFeet").value;
+        let from = document.getElementById("From").value;
+        let to = document.getElementById("To").value;
+        let result;
+        if (from == "meter" && to == "feet") {
+          result = meterToFeet / 3.2808 + "feet";
+        } else if (from == "feet" && to == "meter") {
+          result = meterToFeet * 3.2808 + "meter";
+        } else if (from == "meter" && to == "meter") {
+          result = meterToFeet + "meter";
+        } else {
+          result = meterToFeet + "feet";
+        }
+        document.getElementById("result").innerHTML = "result: " + result;
+      }
+    </script>
+  </body>
+</html>

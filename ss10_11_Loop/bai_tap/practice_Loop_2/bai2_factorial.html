@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Dùng hàm đệ quy */
+      let n = +prompt("Ban can tinh giai thua cua: ");
+      document.write("Giai thua cua " + n + " la: " + giaiThua(n));
+
+      function giaiThua(n) {
+        if (n <= 1) {
+          return 1;
+        } else {
+          return n * giaiThua(n - 1);
+        }
+      }
+
+      /* Không dùng hàm đệ quy */
+      /*
+      let n = +prompt("Giai thua cua: ");
+      let gth = 1;
+      for (let i = 1; i <= n; i++) {
+        gth *= i;
+      }
+      document.write(gth);
+      */
+    </script>
+  </body>
+</html>

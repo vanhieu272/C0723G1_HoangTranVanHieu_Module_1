@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let tong = 0;
+      document.write("Day 20 so Fibonacci dau tien la: " + "<br/>");
+      for (let i = 0; i <= 20; i++) {
+        document.write(+Fibonacci(i) + "<br/>");
+        tong += Fibonacci(i);
+      }
+
+      document.write("Tong cua 30 so Fibonacci dau tien la: " + tong);
+
+      function Fibonacci(n) {
+        if (n == 0) {
+          return 0;
+        }
+        if (n == 1) {
+          return 1;
+        } else {
+          return Fibonacci(n - 1) + Fibonacci(n - 2);
+        }
+      }
+    </script>
+  </body>
+</html>

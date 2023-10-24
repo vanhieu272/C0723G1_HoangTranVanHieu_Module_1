@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arrA = [1, 2, 3, 4, 5, 6, 7];
+      let arrB = [5, 5, 7, 8, 9, 10, 11, 11, 12, 12, 13, 6, 6, 11, 12];
+      let arrC = [];
+      document.write("Mảng A: [" + arrA + "] <br/>");
+      document.write("Mảng B: [" + arrB + "] <br/>");
+      findMissValue(arrA, arrB);
+
+      function findMissValue() {
+        for (let i = 0; i < arrB.length; i++) {
+          if (!arrA.includes(arrB[i]) && !arrC.includes(arrB[i])) {
+            arrC.push(arrB[i]);
+          }
+        }
+        document.write(
+          "Mảng C chứa các phần tử trong B nhưng không xuất hiện trong A (và đã loại bỏ phần tử trùng lặp): arrC =  [" +
+            arrC +
+            "]"
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Temperature {
+        constructor(degreeC) {
+          this.degreeC = degreeC;
+        }
+        getdegreeC() {
+          return this.degreeC;
+        }
+
+        setdegreeC(value) {
+          if (value > -273) {
+            this.degreeC = value;
+          }
+        }
+
+        convertCtoF() {
+          document.write(
+            this.degreeC + " C = " + (this.degreeC * 1.8 + 32) + " F" + "<br>"
+          );
+        }
+        convertCtoKelvin() {
+          document.write(
+            this.degreeC + " C = " + (this.degreeC + 273) + " K" + "<br>"
+          );
+        }
+      }
+
+      let temperature = new Temperature(25);
+      /*Hiển thị kết quả với giá trị đầu vào là 25 độ C*/
+      // temperature.convertCtoF();
+      // temperature.convertCtoKelvin();
+
+      /* Thử truyền vào giá trị nhiệt độ khác thông qua set */
+      temperature.setdegreeC(100);
+      temperature.convertCtoF();
+      temperature.convertCtoKelvin();
+    </script>
+  </body>
+</html>

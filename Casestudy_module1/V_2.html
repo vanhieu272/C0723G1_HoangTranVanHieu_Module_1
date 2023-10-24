@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let m = +prompt("Nhập số hàng: ");
+      let n = +prompt("Nhập số cột: ");
+      let arr = new Array(m);
+      let sum = 0;
+      for (let i = 0; i < m; i++) {
+        arr[i] = new Array(n);
+        for (let j = 0; j < n; j++) {
+          arr[i][j] = +prompt(
+            "Nhap phan tu thu " + "[" + i + "]" + "[" + j + "]"
+          );
+        }
+      }
+      console.log(arr);
+      console.log("Số các số nguyên tố trong mảng là: " +countPrimeNumber(arr));
+
+      function countPrimeNumber(arr) {
+        let count = 0;
+        for (let i = 0; i < m; i++) {
+          for (let j = 0; j < n; j++) {
+            if (checkPrime(arr[i][j])) {
+                console.log(arr[i][j]);
+              count++;
+            }
+          }
+        }
+        return count;
+      }
+
+      function checkPrime(n) {
+        let count = 0;
+        for (let i = 1; i <= Math.sqrt(n); i++) {
+          if (n % i == 0) {
+            count++;
+          }
+        }
+        if(n < 2){
+            return false;
+        }
+        if (count < 2) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

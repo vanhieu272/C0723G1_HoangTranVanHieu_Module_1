@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let value = +prompt("Nhap so can tim trong mang: ");
+      let arr = [1, 4, 2, -6, 5, 10, 18, 3];
+      alert("Mang hien tai la: " +arr);
+      index = -1;
+      for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] == value) {
+          index = i;
+        } 
+      }
+      if(index > -1 ){
+        alert("So " +value +" co trong mang va nam o vi tri thu " +index);
+      }else{
+        alert("Khong tim thay so " +value +" trong mang");
+    }
+      
+    </script>
+  </body>
+</html>

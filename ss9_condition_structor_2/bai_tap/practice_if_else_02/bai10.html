@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let thoiGianTieuThuDien = +prompt("Nhập thời gian tiêu thụ điện: ");
+      let tongCongSuat = +prompt("Nhập số kW");
+      let giaTien = 0;
+      //quy dinh 1KW.h = 5000d
+      let luongDienTieuThu = 0;
+      if (thoiGianTieuThuDien > 0 && tongCongSuat > 0) {
+        luongDienTieuThu = thoiGianTieuThuDien * tongCongSuat;
+        giaTien = luongDienTieuThu * 1728;
+        document.write(" GIá Tiền điện tháng này là : " + giaTien + "VNĐ");
+      } else {
+        alert("Giá trị không hợp lệ. Bấm F5 hoặc Reload trang để nhập lại");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Tạo và duyệt mảng SỐ NGUYÊN bất kì
+        let num = +prompt("Nhap vao so phan tu cua mang: ");
+        let arr = new Array(num);
+        for(let i = 0; i < arr.length; i++){
+            arr[i] = +prompt("Nhap phan tu thu "+i);
+            if(!Number.isInteger(arr[i])){
+                alert("Vui long chi nhap so nguyen!! Moi ban nhap lai!!");
+                i--;
+            }
+        }
+        document.write("Ham ban dau la: "+ arr + "</br>");
+        document.write("Ham sau khi dao nguoc la: " +reverseArray(arr));
+        
+
+        //Hàm đảo ngược
+        function reverseArray(arr){
+            let first = 0;
+            let last = arr.length-1;
+            while (first < last) {
+                let temp = arr[first];
+                arr[first] = arr[last];
+                arr[last] = temp;
+                first++;
+                last--;
+        }
+        return arr;
+    }
+    </script>
+</body>
+</html>

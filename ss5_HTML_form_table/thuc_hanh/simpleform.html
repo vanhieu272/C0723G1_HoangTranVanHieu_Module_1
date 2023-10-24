@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <style>html{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .option{
+        display: block;
+    }
+    </style>
+    <form action="simpleform.html" name="order-form" method="post">
+        <h2> <b>Oder Form </b></h2>
+        <p>What would you like to buy ? </p>
+        <select name="select-food">
+            <option value="spaghetti">Mì Spaghetti</option>
+            <option value="spaghetti">Mì Spaghetti</option>
+            <option value="spaghetti">Mì Spaghetti</option>
+            <option value="spaghetti">Mì Spaghetti</option>
+            <option value="spaghetti">Mì Spaghetti</option>
+            <option value="spaghetti">Mì Spaghetti</option>
+        </select>
+        <p> How may would you like to order? </p>
+        <label class="option"><input type="radio" name="price-option">1 - $10</label>
+        <label class="option"><input type="radio" name="price-option">2 - $20</label>
+        <label class="option"><input type="radio" name="price-option">3 - $25</label>
+        <h4>Name *</h4>
+        <label><input type="text" name="firstname" placeholder="First Name" size="10"></label>
+        <label><input type="text" name="lastname" placeholder="Last Name" size="10"></label>
+        <h4>Email</h4>
+        <label > <input type="email" placeholder="example@gmail.com" size="30"></label>
+        <h4>Phone number</h4>
+        <label ><input type="tel" pattern="[0-9]" size="5"></label>
+        <label > - <input type="tel" pattern="[0-9]" size="5"></label>
+        <label > - <input type="tel" pattern="[0-9]" size="5"></label><br>
+        <br><button type="submit">Submit</button>
+    </form>
+</body>
+</html>

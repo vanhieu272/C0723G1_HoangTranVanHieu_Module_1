@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Open Devtools and go to console to see the result</h1>
+    <script>
+      function drawHeart(m, n) {
+        let i, j;
+
+        for (i = 1; i < 7; i++) {
+          let rows = "";
+          for (j = 1; j <= 7; j++) {
+            if (
+              !(
+                (i == 1 && (j == 1 || j == 4 || j == 7)) ||
+                (i == 4 && (j == 1 || j == 7)) ||
+                (i == 5 && (j <= 2 || j >= 6)) ||
+                (i == 6 && (j <= 3 || j >= 5))
+              )
+            ) {
+              rows += " * ";
+            } else {
+              rows += "   ";
+            }
+          }
+          console.log(rows);
+        }
+      }
+
+      let m = 7,
+        n = 7;
+      drawHeart(m, n);
+    </script>
+  </body>
+</html>

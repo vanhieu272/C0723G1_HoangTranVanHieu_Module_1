@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Mobile {
+        constructor(status, battery) {
+          this.status = status;
+          this.battery = battery;
+          this.inbox = [];
+          this.sent = [];
+          this.draft = "";
+        }
+
+        isOn() {
+          return this.status === "on";
+        }
+
+        turnOn() {
+          this.status = "on";
+        }
+
+        turnOff() {
+          this.status = "off";
+        }
+
+        charge() {
+          this.battery = 100;
+        }
+
+        compose() {
+          this.draft = prompt("Nhập nội dung tin nhắn: ");
+        }
+
+        receive(message) {
+          this.inbox.push(message);
+        }
+
+        send(message, recipient) {
+          if (this.isOn() && this.battery > 0) {
+            recipient.receive(message);
+            this.sent.push(message);
+            this.battery--;
+          }
+        }
+
+        viewInbox() {
+          if (this.isOn() && this.battery > 0) {
+            for (let message of this.inbox) {
+              console.log(message);
+            }
+            this.battery--;
+          }
+        }
+
+        viewSent() {
+          if (this.isOn() && this.battery > 0) {
+            for (let message of this.sent) {
+              console.log(message);
+            }
+            this.battery--;
+          }
+        }
+      }
+
+      let nokia = new Mobile("off", 100);
+      let iphone = new Mobile("off", 100);
+      //Kiểm tra on/off
+      console.log(nokia.isOn()); // false
+      nokia.turnOn();
+      console.log(nokia.isOn()); // true
+
+      nokia.compose();
+      nokia.send(nokia.draft, iphone);
+      console.log(nokia.battery); // gửi 1 tin nhắn -> check battery = 99%
+      nokia.viewSent(); // kiểm tra hộp thư đi
+
+      iphone.turnOn();
+      iphone.viewInbox(); //Kiểm tra hộp thư đến
+    </script>
+  </body>
+</html>

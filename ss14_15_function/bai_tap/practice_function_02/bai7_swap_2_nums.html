@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = +prompt("Nhap vao so thu 1: ");
+      let y = +prompt("Nhap vao so thu 2: ");
+      document.write("x = " + x + "; y = " + y + "</br>");
+      function swap(a, b) {
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        return [a, b];
+      }
+      [x, y] = swap(x, y);
+      document.write("Sau khi chuyen doi: ");
+      document.write("x =" + x); // Kết quả: x = 10
+      document.write("; y =" + y); // Kết quả: y = 5
+
+    </script>
+  </body>
+</html>

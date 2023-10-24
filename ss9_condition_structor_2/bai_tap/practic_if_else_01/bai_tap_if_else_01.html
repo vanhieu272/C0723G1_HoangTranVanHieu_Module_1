@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      while(true){
+        var bai = +prompt("Nhap bai can kiem tra: ");
+      switch (bai) {
+        case 1:
+          let num1 = +prompt("Nhap so a: ");
+          let num2 = +prompt("Nhap so b: ");
+          if (num1 % num2 === 0) {
+            alert("a chia het cho b");
+          } else {
+            alert("a khong chia het cho b");
+          } continue;
+        case 2: 
+          let tuoi = +prompt("Nhap so tuoi de kiem tra xem co du dieu kien hoc lop 10 khong: ");
+          if(tuoi >= 15){
+            alert("Du tuoi hoc lop 10");
+          }else{
+            alert("Khong du tuoi");
+          } continue;
+
+        case 3: 
+          let numInt = +prompt("Nhap so nguyen can kiem tra: ");
+          if(numInt > 0){
+            alert(+numInt + " > 0 ");
+          }else if(numInt === 0){
+            alert(+numInt + " = 0");
+          }else{
+            alert(+numInt +  "< 0")
+          } continue;
+
+        case 4: 
+          let number1 = +prompt("Nhap so thu nhat: ");
+          let number2 = +prompt("Nhap so thu hai: ");
+          let number3 = +prompt("Nhap so thu ba: ");
+          let max = number1;
+
+        if (max < number2) {
+          max = number2;
+        }
+        if (max < number3) {
+          max = number3;
+        }
+        alert("So lon nhat trong 3 so " +number1 +", " +number2 +", " +number3 +" la: " +max);
+        continue;
+      
+        case 5:
+          let diemKiemTra = +prompt("Nhap diem bai kiem tra: ");
+          let diemGiuaKy = +prompt("Nhap diem thi giua ky: ");
+          let diemCuoiKy = +prompt("Nhap diem thi cuoi ky: ");
+          let diemTB = (diemKiemTra + diemGiuaKy + diemCuoiKy) / 3;
+          if(diemTB >= 9){
+              alert("Xuat sac");
+          }else if(diemTB >= 6.5){
+            alert("Tot");
+          }else if(diemTB<6.5){
+            alert("Ban Tach!");
+          } continue;
+
+        case 6: 
+          let doanhThu = +prompt("Nhap doanh thu cua Thang: ");
+          let tienHoaHong = 0;
+          if(doanhThu >= 50000000){
+            tienHoaHong = doanhThu * 0.08;
+          }else if(doanhThu >= 20000000){
+            tienHoaHong = doanhThu*0.07 ;
+          }else{
+            tienHoaHong= doanhThu*0.05;
+          } 
+          alert("Tien hoa hong la:" +tienHoaHong);
+          continue;
+
+        case 7: 
+          let soPhutGoi = +prompt("Nhap so phut: ");
+          let cuocPhi = 1;
+          if(soPhutGoi > 10){
+            cuocPhi *= soPhutGoi * 2000;
+          }else{
+            cuocPhi*= soPhutGoi * 3000;
+          }
+          alert("Cuoc phi: " + cuocPhi);
+          continue;
+
+  }
+}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>bai 6</title>
+  </head>
+  <body>
+    <script>
+      //Nhập độ dài và phần tử cho mảng
+      let arrLength = +prompt("Nhap so phan tu cua mang: ");
+      let arr = [arrLength];
+      for (let i = 0; i < arrLength; i++) {
+        arr[i] = prompt("Nhap phan tu thu " + i);
+        if (arr[i].length != 1) {  //yêu cầu nhập 1 kí tự cho mỗi phần tử, nhập khác thì nhập lại
+          alert("Moi phan tu chi chua 1 KI TU. Vui long nhap lai :))"); 
+          i--;
+        }
+      }
+
+      for (let j = 0; j <= arr.length - 1; j++) {
+        if (arr[j] === "-") {
+          arr[j] = "_";
+        }
+      }
+      document.write('Mang sau khi thay ki tu "-" bang ki tu "_" la ' + arr);
+    </script>
+  </body>
+</html>

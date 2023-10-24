@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20ec6452-ac6f-4009-be0a-9aad7e0ffd0c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Casestudy_module1/VI_1/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Casestudy_module1/VI_1/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/bang_cuu_chuong.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_1/bai1_1_100.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_1/bai2_temperature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_1/bai3_fibonacci.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_1/bai4_first_fibo_divisible_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_1/bai5_tong_fibonacci.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_1/bai6_tong30_so_tu_nhien.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_1/bai7_FizzBuzz.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_1/bai8_guess_the_number_do_while.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_1/bai8_guess_the_number_for.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_2/bai1_Fibonacci.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_2/bai2_factorial.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_2/bai3_triangle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_2/bai4.rectangle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_2/bai5_interest_rate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/practice_Loop_2/bai6_draw_heart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/bai_tap/so_nguyen_to.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/thuc_hanh/bai1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/thuc_hanh/bai2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/thuc_hanh/bai3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/thuc_hanh/bai4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/thuc_hanh/dowhilesample.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss10_Loop/thuc_hanh/forinfor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/Cac_ham_co_san/bai1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/Cac_ham_co_san/bai2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/Cac_ham_co_san/bai3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/dictionary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_01/bai1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_01/bai2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_01/bai3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_01/bai4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_01/bai5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_01/bai6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_01/bai7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_01/bai8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_01/bai9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_02/bai1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_02/bai2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_02/bai3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_02/bai4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_02/bai5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_array/bai_tap/practice_Array_02/bai6.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": -1
+}]]></component>
+  <component name="ProjectId" id="2X9BqcjtEPgh3WcfoSXHS5AvjJg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Codegym",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20ec6452-ac6f-4009-be0a-9aad7e0ffd0c" name="Changes" comment="" />
+      <created>1698031607767</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698031607767</updated>
+      <workItem from="1698031609463" duration="50000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

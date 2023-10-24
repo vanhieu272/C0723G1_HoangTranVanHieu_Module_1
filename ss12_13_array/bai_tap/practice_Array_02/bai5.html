@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Nhập độ dài và phần tử cho mảng thứ 1
+        let arrLength1 = +prompt("Nhap so phan tu cua mang thu 1: ");
+        let arr1= [arrLength1];
+        for(let i= 0; i < arrLength1; i++){
+            arr1[i] = prompt("Nhap phan tu thu " +i);
+        }
+         //Nhập độ dài và phần tử cho mảng thứ 2
+        let arrLength2 = +prompt("Nhap so phan tu cua mang thu 2: ");
+        let arr2= [arrLength2];
+        for(let i= 0; i < arrLength1; i++){
+            arr2[i] = prompt("Nhap phan tu thu " +i);
+        }
+        //So sánh 
+        if(arrLength1 !== arrLength2){
+            alert("2 mang khac nhau");
+        }else{
+            for(let i = 0; i < arrLength1; i++){
+                if(arr1[i] !== arr2[i]){
+                    alert("Hai mang khac nhau")
+                    break;
+                }else{
+                    alert("Hai mang giong nhau");
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Kiểm tra có bao nhiêu ngày trong tháng:</h1>
+    <input type="number" id="month" placeholder="Nhập tháng cần kiểm tra" />
+    <button onclick="check()">Kiểm tra</button><br />
+    <div id="result"></div>
+    <script>
+      function check() {
+        let result = document.getElementById("result");
+        let month = document.getElementById("month").value;
+        if (parseInt(month) < 1 || parseInt(month) > 12) {
+          alert("Tháng không hợp lệ");
+        } else {
+          switch (month) {
+            case "1":
+              result.innerText = "Tháng 1 có 31 ngày";
+              break;
+            case "2":
+              result.innerText = "Tháng 2 có 28 hoặc 29 ngày";
+              break;
+            case "3":
+              result.innerText = "Tháng 3 có 31 ngày";
+              break;
+            case "4":
+              result.innerText = "Tháng 4 có 30 ngày";
+              break;
+            case "5":
+              result.innerText = "Tháng 5 có 31 ngày";
+              break;
+            case "6":
+              result.innerText = "Tháng 6 có 30 ngày";
+              break;
+            case "7":
+              result.innerText = "Tháng 7 có 31 ngày";
+              break;
+            case "8":
+              result.innerText = "Tháng 8 có 31 ngày";
+              break;
+            case "9":
+              result.innerText = "Tháng 9 có 30 ngày";
+              break;
+            case "10":
+              result.innerText = "Tháng 10 có 31 ngày";
+              break;
+            case "11":
+              result.innerText = "Tháng 11 có 30 ngày";
+              break;
+            case "12":
+              result.innerText = "Tháng 12 có 31 ngày";
+              break;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let radius = +prompt("Nhap ban kinh cua hinh tron: ");
+        const pi = 3.14;
+        document.write("Chu vi hinh tron co ban kinh " +radius + " la: "+perimeterCircle(radius) +"</br>");
+        document.write("Dien tich hinh tron co ban kinh " +radius + " la: "+areaCircle(radius));
+
+        function perimeterCircle(r){
+            return  2 * pi * r;
+        }
+
+        function areaCircle(r){
+            return pi * r * r;
+        }
+    </script>
+</body>
+</html>
